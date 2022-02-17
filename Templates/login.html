@@ -1,0 +1,85 @@
+{% load static %}
+{% static "images" as baseUrls %} 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stupor Shop</title>
+<!--/tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Stupor Shop" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//tags -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/team.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"> 
+<!-- //for bootstrap working -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+ 
+<!-- header-bot -->
+<div class="header-bot">
+	<div class="header-bot_inner_wthreeinfo_header_mid">
+		<div class="col-md-4 header-middle">
+			<form action="#" method="post">
+			</form>
+		</div>
+		<!-- header-bot -->
+			<div class="col-md-4 logo_agile">
+				<h1><span>S</span>tupor Shop </i></a></h1>
+			</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- /banner_bottom_agile_info -->
+<div class="page-head_agile_info_w3l">
+		<div class="container">
+			<h3>Sign in </span></h3>
+				<!--/w3_short-->
+				<div class="services-breadcrumb">
+						<div class="agile_inner_breadcrumb">
+						   <ul class="w3_short">
+								<li><a href="/">Home</a><i>|</i></li>
+								<li>Sign in</a></li>
+							</ul>
+						</div>
+				</div>
+	  			 <!--//w3_short-->
+	</div>
+</div>
+
+
+
+
+<!-- //for login -->
+<body>
+    <h1>Enter your details:</h1>
+    <form action="login" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="Submit">
+        
+    </form>
+    <div>
+        {% for message in messages %}
+        <h3> {{message}} </h3>
+        {% endfor %}
+    <div>
+        
+</body>
+<!-- //for login -->
+
+
+
+
+
+
+
+</body>
+</html>
